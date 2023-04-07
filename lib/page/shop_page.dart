@@ -1,4 +1,3 @@
-import 'dart:js';
 
 import 'package:buble_tea_app/components/drink_tile.dart';
 import 'package:buble_tea_app/models/shop.dart';

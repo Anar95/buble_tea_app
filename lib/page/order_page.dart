@@ -16,6 +16,7 @@ class _OrderPageState extends State<OrderPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text(widget.drink.name)),
       backgroundColor: Colors.brown[200],
     );
   }
