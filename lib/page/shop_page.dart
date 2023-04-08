@@ -19,7 +19,7 @@ class _ShopPageState extends State<ShopPage> {
   void goToOrderPage(Drink drink) {
   // navigate to order page
   Navigator.push(
-     context as BuildContext,
+     context,
      MaterialPageRoute(
       builder: (context) => OrderPage(
         drink: drink,
@@ -37,9 +37,9 @@ class _ShopPageState extends State<ShopPage> {
           child: Column(
             children: [
               //headline
-              Text(
+              const Text(
                 'Bubble Tea Shop',
-                style: const TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 20),
               ),
               
               //List of drşnks for sale
@@ -54,7 +54,7 @@ class _ShopPageState extends State<ShopPage> {
                     return DrinkTile(
                       drink: individualDrink,
                       onTap: () => goToOrderPage(individualDrink),
-                      trailing: Icon(Icons.arrow_forward_ios)
+                      trailing: const Icon(Icons.arrow_forward_ios)
                       );
                   },
                 ),

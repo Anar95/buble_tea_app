@@ -46,8 +46,8 @@ class _OrderPageState extends State<OrderPage> {
     //let user know it has been successfully added
     showDialog(
       context: context, 
-      builder:(context) =>AlertDialog(
-       title: const Text('Successfully added to cart'),
+      builder:(context) =>const AlertDialog(
+       title: Text('Successfully added to cart'),
       ) ,
       );
   }
@@ -119,13 +119,13 @@ class _OrderPageState extends State<OrderPage> {
 
           //add to cart button
           MaterialButton(
+            color: Colors.brown,
+            onPressed: addToCart,
             child: const Text(
               'Add to Cart',
               style: TextStyle(color: Colors.white),
               
             ),
-            color: Colors.brown,
-            onPressed: addToCart,
             
           )
         ],

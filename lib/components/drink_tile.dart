@@ -1,7 +1,8 @@
 import 'package:buble_tea_app/models/drink.dart';
 import 'package:flutter/material.dart';
 
-class DrinkTile extends StatelessWidget {
+// ignore: must_be_immutable
+class DrinkTile extends StatefulWidget {
   final Drink drink;
   void Function()? onTap;
   final Widget trailing;
@@ -14,19 +15,24 @@ class DrinkTile extends StatelessWidget {
   });
 
   @override
+  State<DrinkTile> createState() => _DrinkTileState();
+}
+
+class _DrinkTileState extends State<DrinkTile> {
+  @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: widget.onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: Color.fromARGB(255, 218, 191, 181),
+          color: const Color.fromARGB(255, 218, 191, 181),
           borderRadius: BorderRadius.circular(15),
         ),
         child: ListTile(
-            title: Text(drink.name),
-            subtitle: Text(drink.price),
-            leading: Image.asset(drink.imagePath),
-            trailing: trailing,
+            title: Text(widget.drink.name),
+            subtitle: Text(widget.drink.price),
+            leading: Image.asset(widget.drink.imagePath),
+            trailing: widget.trailing,
             ),
       ),
     );

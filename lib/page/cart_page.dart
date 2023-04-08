@@ -36,8 +36,15 @@ class _CartPageState extends State<CartPage> {
                 child: ListView.builder(itemBuilder: (context, index) {
                   //get individual drink in cart first
                   Drink drink = value.cart[index];
+
                   //return as a nice tile
-                }),
+                  return DrinkTile(
+                    drink: drink,
+                    onTap: () => removeFromCart(drink),
+                    trailing: const Icon(Icons.delete),
+                  );
+                },
+                ),
               ),
               //pay button
             ],
