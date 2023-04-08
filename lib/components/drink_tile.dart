@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 class DrinkTile extends StatelessWidget {
   final Drink drink;
-  final Widget trailing;
   void Function()? onTap;
+  final Widget trailing;
 
   DrinkTile({
     super.key,
     required this.drink,
     required this.onTap, 
-    required Icon trailing,
+    required this.trailing,
   });
 
   @override

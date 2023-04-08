@@ -39,7 +39,7 @@ class _ShopPageState extends State<ShopPage> {
               //headline
               Text(
                 'Bubble Tea Shop',
-                style: TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20),
               ),
               
               //List of drşnks for sale
