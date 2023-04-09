@@ -7,6 +7,8 @@ class BubleTeaShop extends ChangeNotifier {
     //pearl milk tea
     Drink(
         name: ' Milk Tea', price: '5.00', imagePath: 'lib/images/image_1.png'),
+   Drink( 
+    name: ' Lemon Tea', price: '5.00', imagePath: 'lib/images/image_2.png'),
   ];
 
   //list of drinks in user cart

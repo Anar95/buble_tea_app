@@ -34,6 +34,7 @@ class _DrinkTileState extends State<DrinkTile> {
             subtitle: Text(widget.drink.price),
             leading: Image.asset(widget.drink.imagePath),
             trailing: widget.trailing,
+            
             ),
       ),
     );
