@@ -41,7 +41,8 @@ class _ShopPageState extends State<ShopPage> {
                 'Bubble Tea Shop',
                 style: TextStyle(fontSize: 20),
               ),
-              
+              const SizedBox(
+                height: 20),
               //List of drşnks for sale
               Expanded(
                 child: ListView.builder(

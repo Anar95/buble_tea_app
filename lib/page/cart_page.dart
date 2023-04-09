@@ -30,10 +30,13 @@ class _CartPageState extends State<CartPage> {
                 'Your Cart',
                 style: TextStyle(fontSize: 20),
               ),
-
+               const SizedBox(
+                height: 20),
               //list of cart items
               Expanded(
-                child: ListView.builder(itemBuilder: (context, index) {
+                child: ListView.builder(
+                  itemCount: value.cart.length,
+                  itemBuilder: (context, index) {
                   //get individual drink in cart first
                   Drink drink = value.cart[index];
 
@@ -41,12 +44,20 @@ class _CartPageState extends State<CartPage> {
                   return DrinkTile(
                     drink: drink,
                     onTap: () => removeFromCart(drink),
-                    trailing: const Icon(Icons.delete),
+                    trailing:  Icon(Icons.delete),
                   );
                 },
                 ),
               ),
               //pay button
+              MaterialButton(
+                child: Text('PAY',
+                style: TextStyle(color: Colors.white),
+                ),
+                
+                color: Colors.brown,
+                onPressed: () {},
+              )
             ],
           ),
         ),

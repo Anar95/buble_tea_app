@@ -24,6 +24,7 @@ class _DrinkTileState extends State<DrinkTile> {
     return GestureDetector(
       onTap: widget.onTap,
       child: Container(
+        margin: EdgeInsets.only(bottom: (10)),
         decoration: BoxDecoration(
           color: const Color.fromARGB(255, 218, 191, 181),
           borderRadius: BorderRadius.circular(15),
