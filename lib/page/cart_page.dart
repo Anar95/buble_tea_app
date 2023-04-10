@@ -4,6 +4,9 @@ import 'package:buble_tea_app/models/shop.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../components/my_button.dart';
+import 'home_page.dart';
+
 class CartPage extends StatefulWidget {
   const CartPage({super.key});
 
@@ -30,33 +33,32 @@ class _CartPageState extends State<CartPage> {
                 'Your Cart',
                 style: TextStyle(fontSize: 20),
               ),
-               const SizedBox(
-                height: 20),
+              const SizedBox(height: 20),
               //list of cart items
               Expanded(
                 child: ListView.builder(
                   itemCount: value.cart.length,
                   itemBuilder: (context, index) {
-                  //get individual drink in cart first
-                  Drink drink = value.cart[index];
+                    //get individual drink in cart first
+                    Drink drink = value.cart[index];
 
-                  //return as a nice tile
-                  return DrinkTile(
-                    drink: drink,
-                    onTap: () => removeFromCart(drink),
-                    trailing:  Icon(Icons.delete),
-                  );
-                },
+                    //return as a nice tile
+                    return DrinkTile(
+                      drink: drink,
+                      onTap: () => removeFromCart(drink),
+                      trailing: Icon(Icons.delete),
+                    );
+                  },
                 ),
               ),
               //pay button
-              MaterialButton(
-                child: Text(
-                'PAY',
-                style: TextStyle(color: Colors.white),
-                ),
-                color: Colors.brown,
-                onPressed: () {},
+              MyButton2(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
+                },
               ),
             ],
           ),

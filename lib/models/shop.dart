@@ -16,7 +16,7 @@ class BubleTeaShop extends ChangeNotifier {
         Drink( 
         name: ' Tai Chi Pearl Milk Te', price: '8.00', imagePath: 'lib/images/image_5.png'),
         Drink( 
-        name: ' Vanilla Bubble Milk Tea', price: '5,99.00', imagePath: 'lib/images/image_6.png'),
+        name: ' Gong Cha Bubble Milk Tea', price: '5,99.00', imagePath: 'lib/images/image_6.png'),
   ];
 
   //list of drinks in user cart

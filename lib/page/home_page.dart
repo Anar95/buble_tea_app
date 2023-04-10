@@ -36,16 +36,75 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
       ),
       drawer: Drawer(
-        child: Container(
-          color: Colors.brown,
-          child: ListView(
-            children: [
-              
-            ],
-          )),
+      
+      child: Container(
+        color: Colors.brown[200],
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.brown,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundImage: NetworkImage(
+                        ''),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    'Anar Abbas',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Ana Sayfa'),
+              onTap: () {
+                // Handle home onTap
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.search),
+              title: Text('Arama'),
+              onTap: () {
+                // Handle search onTap
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('Ayarlar'),
+              onTap: () {
+                // Handle settings onTap
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.help),
+              title: Text('Yardım'),
+              onTap: () {
+                // Handle help onTap
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.logout),
+              title: Text('Hesaptan Çıkış'),
+              onTap: () {
+                // Handle logout onTap
+              },
+            ),
+          ],
+        ),
       ),
-
-
+    ),
+ 
       backgroundColor: Colors.brown[300],
       bottomNavigationBar: BottomNavBar(
         onTabChange: (index) => navigateBottomBar(index),
