@@ -60,7 +60,7 @@ class _OrderPageState extends State<OrderPage> {
       body: Column(
         children: [
           // drink image
-          SizedBox(
+          Container(
             width: 500,
             height: 550,
           child: Image.asset(widget.drink.imagePath),

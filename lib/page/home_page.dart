@@ -31,6 +31,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
+      drawer: Drawer(
+        child: Container(
+          color: Colors.brown,
+          child: ListView(
+            children: [
+              
+            ],
+          )),
+      ),
+
+
       backgroundColor: Colors.brown[300],
       bottomNavigationBar: BottomNavBar(
         onTabChange: (index) => navigateBottomBar(index),

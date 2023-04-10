@@ -1,5 +1,6 @@
 import 'package:buble_tea_app/models/shop.dart';
 import 'package:buble_tea_app/page/home_page.dart';
+import 'package:buble_tea_app/page/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       builder:(context, child) =>  MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.brown),
-        home: const HomePage(),
+        home:  LoginPage(),
       ),
       );
   }
