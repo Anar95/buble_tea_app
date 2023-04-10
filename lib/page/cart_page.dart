@@ -30,7 +30,7 @@ class _CartPageState extends State<CartPage> {
             children: [
               //headline
               const Text(
-                'Your Cart',
+                'Sepetim',
                 style: TextStyle(fontSize: 20),
               ),
               const SizedBox(height: 20),

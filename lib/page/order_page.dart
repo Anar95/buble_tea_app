@@ -47,7 +47,7 @@ class _OrderPageState extends State<OrderPage> {
     showDialog(
       context: context, 
       builder:(context) =>const AlertDialog(
-       title: Text('Successfully added to cart'),
+       title: Text('Ürününüz Sepete Eklendi'),
       ) ,
       );
   }

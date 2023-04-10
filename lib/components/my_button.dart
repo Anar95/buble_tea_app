@@ -55,7 +55,7 @@ class MyButton2 extends StatelessWidget {
           ),
       child: const Center(
         child:Text(
-          "PAY",
+          "Öde",
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
