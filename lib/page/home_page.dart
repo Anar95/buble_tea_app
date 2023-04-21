@@ -41,18 +41,18 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.zero,
             children: <Widget>[
               DrawerHeader(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.brown,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 30,
                       backgroundImage: NetworkImage(''),
                     ),
-                    SizedBox(height: 10),
-                    Text(
+                    const SizedBox(height: 10),
+                    const Text(
                       'Anar Abbas',
                       style: TextStyle(
                         color: Colors.white,
@@ -63,36 +63,36 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               ListTile(
-                leading: Icon(Icons.home),
-                title: Text('Ana Sayfa'),
+                leading: const Icon(Icons.home),
+                title: const Text('Ana Sayfa'),
                 onTap: () {
                   // Handle home onTap
                 },
               ),
               ListTile(
-                leading: Icon(Icons.search),
-                title: Text('Arama'),
+                leading: const Icon(Icons.search),
+                title: const Text('Arama'),
                 onTap: () {
                   // Handle search onTap
                 },
               ),
               ListTile(
-                leading: Icon(Icons.settings),
-                title: Text('Ayarlar'),
+                leading: const Icon(Icons.settings),
+                title: const Text('Ayarlar'),
                 onTap: () {
                   // Handle settings onTap
                 },
               ),
               ListTile(
-                leading: Icon(Icons.help),
-                title: Text('Yardım'),
+                leading: const Icon(Icons.help),
+                title: const Text('Yardım'),
                 onTap: () {
                   // Handle help onTap
                 },
               ),
               ListTile(
-                leading: Icon(Icons.logout),
-                title: Text('Hesaptan Çıkış'),
+                leading: const Icon(Icons.logout),
+                title: const Text('Hesaptan Çıkış'),
                 onTap: () {
                   Navigator.push(
               context,
