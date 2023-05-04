@@ -1,17 +1,5 @@
 # buble_tea_app
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# buble_tea_app
+<img width="472" alt="Ekran Resmi 2023-05-04 21 43 29" src="https://user-images.githubusercontent.com/79910694/236299461-a66588b7-059d-47b7-84ca-d739fd2d7449.png">
+<img width="470" alt="Ekran Resmi 2023-05-04 21 43 45" src="https://user-images.githubusercontent.com/79910694/236299469-542519cd-5fef-4ff1-bd9e-ed9be819ca8b.png">
+<img width="472" alt="Ekran Resmi 2023-05-04 21 44 01" src="https://user-images.githubusercontent.com/79910694/236299473-1c92f41a-d648-4654-8498-83a008d69158.png">
